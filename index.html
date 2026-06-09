@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verrazano Plumbing Contractors Inc. | Licensed Master Plumber — Brooklyn, NY</title>
+<meta name="description" content="Verrazano Plumbing Contractors Inc. — family-owned, full-service commercial &amp; residential plumbing in Brooklyn and NYC. NYC Licensed Master Plumber #2479. 18+ years of experience. Call 347-408-9710 for 24/7 service.">
+<meta name="theme-color" content="#0E2C49">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Verrazano Plumbing Contractors Inc. | Licensed Master Plumber — Brooklyn, NY">
+<meta property="og:description" content="Family-owned, full-service commercial &amp; residential plumbing in Brooklyn and NYC. NYC Licensed Master Plumber #2479.">
+<meta property="og:image" content="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0E2C49;--navy-2:#0A2138;--navy-3:#13355A;
+  --blue:#1E6FB0;--blue-2:#185C93;--blue-bright:#2B85BB;--blue-soft:#EAF3FA;--blue-line:#cfe2f1;
+  --orange:#E0532C;--orange-2:#C8401F;--flame:#F0843A;
+  --ink:#16242F;--ink-soft:#51616E;--muted:#8A97A1;
+  --bg:#ffffff;--bg-soft:#F4F8FB;--bg-soft2:#EAF1F7;--line:#E4EBF1;--line-2:#D4E0EA;
+  --r-sm:8px;--r:12px;--r-lg:18px;--r-xl:26px;--pill:999px;
+  --sh-sm:0 1px 2px rgba(14,44,73,.06);
+  --sh:0 4px 10px rgba(14,44,73,.07),0 18px 44px rgba(14,44,73,.10);
+  --sh-lg:0 30px 70px rgba(14,44,73,.18);
+  --sans:'Manrope',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --serif:'Source Serif 4',Georgia,serif;
+  --max:1200px;--nav:76px;
+  --ease:cubic-bezier(.4,0,.2,1);--ease-out:cubic-bezier(.22,1,.36,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav) + 44px);font-size:16px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+body{font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.65;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+::selection{background:var(--blue);color:#fff}
+.in{max-width:var(--max);margin:0 auto;padding:0 28px}
+.sec{padding:96px 0;position:relative}
+.eyebrow{font-family:var(--sans);text-transform:uppercase;letter-spacing:.18em;font-size:.74rem;font-weight:800;color:var(--blue)}
+.eyebrow.org{color:var(--orange)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:var(--sans);font-weight:700;font-size:1.02rem;letter-spacing:-.01em;padding:14px 28px;border-radius:var(--pill);cursor:pointer;border:2px solid transparent;transition:transform .2s var(--ease),background .2s,box-shadow .2s,border-color .2s,color .2s;white-space:nowrap}
+.btn svg{transition:transform .2s var(--ease)}
+.btn--org{background:var(--orange);color:#fff;box-shadow:0 10px 24px rgba(224,83,44,.30)}
+.btn--org:hover{background:var(--orange-2);transform:translateY(-2px);box-shadow:0 16px 32px rgba(224,83,44,.40)}
+.btn--blue{background:var(--blue);color:#fff;box-shadow:0 10px 24px rgba(30,111,176,.28)}
+.btn--blue:hover{background:var(--blue-2);transform:translateY(-2px);box-shadow:0 16px 32px rgba(30,111,176,.36)}
+.btn--ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.45)}
+.btn--ghost:hover{border-color:#fff;background:rgba(255,255,255,.08);transform:translateY(-2px)}
+.btn--outline{background:#fff;color:var(--navy);border-color:var(--line-2)}
+.btn--outline:hover{border-color:var(--blue);color:var(--blue);transform:translateY(-2px)}
+.btn--sm{padding:10px 20px;font-size:.93rem}
+.btn:hover svg.arr{transform:translateX(3px)}
+
+/* top bar */
+.topbar{background:var(--navy-2);color:#cdd9e6;font-size:.9rem;font-weight:500}
+.topbar .in{display:flex;align-items:center;justify-content:space-between;gap:16px;height:44px}
+.topbar a{color:#dfe9f2;transition:color .2s}
+.topbar a:hover{color:#fff}
+.topbar .tb-left{display:flex;align-items:center;gap:22px}
+.topbar .tb-right{display:flex;align-items:center;gap:22px}
+.topbar .tb-i{display:inline-flex;align-items:center;gap:8px;white-space:nowrap}
+.topbar svg{color:var(--blue-bright);flex:0 0 auto}
+.topbar .lic{color:#9fb2c4}
+.topbar .lic b{color:#fff;font-weight:700}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:1000;height:var(--nav);background:#fff;display:flex;align-items:center;border-bottom:1px solid var(--line);transition:box-shadow .25s,height .25s}
+.nav.scrolled{box-shadow:0 4px 20px rgba(14,44,73,.10)}
+.nav .in{width:100%;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center}
+.brand img{height:46px;width:auto}
+.nav__links{display:flex;align-items:center;gap:2px;list-style:none}
+.nav__links>li>a{display:inline-flex;align-items:center;gap:5px;color:var(--navy);padding:9px 14px;border-radius:var(--r-sm);font-weight:700;font-size:.96rem;transition:color .18s,background .18s}
+.nav__links>li>a:hover{color:var(--blue);background:var(--bg-soft)}
+.nav__links .has>a::after{content:"";width:7px;height:7px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg) translateY(-2px);opacity:.6}
+.drop{position:relative}
+.drop__menu{position:absolute;top:calc(100% + 6px);left:0;min-width:248px;background:#fff;border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh);padding:8px;opacity:0;visibility:hidden;transform:translateY(8px);transition:.2s var(--ease)}
+.drop:hover .drop__menu{opacity:1;visibility:visible;transform:none}
+.drop__menu a{display:block;padding:10px 14px;border-radius:var(--r-sm);font-size:.94rem;font-weight:600;color:var(--ink-soft);transition:.15s}
+.drop__menu a:hover{background:var(--blue-soft);color:var(--blue)}
+.nav__cta{margin-left:8px}
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:9px;border-radius:var(--r-sm)}
+.burger span{width:24px;height:2px;background:var(--navy);border-radius:2px;transition:.25s var(--ease)}
+.burger.on span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.burger.on span:nth-child(2){opacity:0}
+.burger.on span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+.mobile{position:fixed;inset:0;z-index:999;background:rgba(255,255,255,.98);backdrop-filter:blur(14px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;opacity:0;pointer-events:none;transition:opacity .26s}
+.mobile.on{opacity:1;pointer-events:all}
+.mobile a{font-weight:700;font-size:1.35rem;letter-spacing:-.02em;color:var(--navy);padding:8px 18px;border-radius:var(--r)}
+.mobile a:hover{background:var(--bg-soft)}
+.mobile .m-cta{background:var(--orange);color:#fff;margin-top:10px}
+
+/* hero */
+.hero{position:relative;background:linear-gradient(155deg,#10355A 0%,#0A2138 58%,#0E2C49 100%);color:#fff;padding:calc(72px) 0 150px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.06) 1px,transparent 1.4px);background-size:30px 30px;-webkit-mask-image:radial-gradient(ellipse 80% 70% at 30% 28%,#000,transparent 76%);mask-image:radial-gradient(ellipse 80% 70% at 30% 28%,#000,transparent 76%)}
+.hero::after{content:"";position:absolute;top:-140px;right:-140px;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(43,133,187,.34),transparent 66%);filter:blur(8px)}
+.hero__in{position:relative;z-index:2;display:grid;grid-template-columns:1.18fr .82fr;gap:50px;align-items:center}
+.hero .pill-badge{display:inline-flex;align-items:center;gap:9px;background:rgba(43,133,187,.16);border:1px solid rgba(43,133,187,.4);color:#bfe0f3;font-weight:700;font-size:.82rem;letter-spacing:.02em;padding:7px 16px;border-radius:var(--pill);margin-bottom:22px}
+.hero .pill-badge .dot{width:8px;height:8px;border-radius:50%;background:#43d27a;box-shadow:0 0 0 4px rgba(67,210,122,.25)}
+.hero h1{font-family:var(--sans);font-weight:800;font-size:clamp(2.4rem,5vw,3.85rem);line-height:1.05;letter-spacing:-.03em;margin-bottom:20px}
+.hero h1 .u{color:#5db4e6}
+.hero p.sub{font-size:clamp(1.06rem,1.6vw,1.22rem);color:rgba(223,233,242,.84);max-width:560px;margin-bottom:30px}
+.hero .cta-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.hero .trust{margin-top:30px;display:flex;flex-wrap:wrap;gap:10px 26px;align-items:center;color:#bcccdb;font-size:.92rem;font-weight:600}
+.hero .trust span{display:inline-flex;align-items:center;gap:8px}
+.hero .trust svg{color:#5db4e6}
+/* hero card */
+.hero__card{position:relative;background:linear-gradient(160deg,rgba(255,255,255,.1),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.14);border-radius:22px;padding:32px 30px;box-shadow:0 30px 70px rgba(0,0,0,.34);backdrop-filter:blur(4px)}
+.hero__card h3{font-family:var(--sans);font-weight:800;font-size:1.32rem;letter-spacing:-.02em;margin-bottom:6px}
+.hero__card p{color:rgba(223,233,242,.78);font-size:.95rem;margin-bottom:20px}
+.hero__card .emerg{display:flex;align-items:center;gap:14px;background:rgba(224,83,44,.16);border:1px solid rgba(224,83,44,.4);border-radius:var(--r);padding:14px 16px;margin-bottom:18px}
+.hero__card .emerg .ic{width:42px;height:42px;flex:0 0 auto;border-radius:10px;background:var(--orange);color:#fff;display:grid;place-items:center}
+.hero__card .emerg b{display:block;font-size:1.18rem;letter-spacing:-.02em}
+.hero__card .emerg span{font-size:.82rem;color:#e7b3a3}
+.hero__card .mini{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.hero__card .mini div{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:12px 14px}
+.hero__card .mini b{display:block;font-size:1.3rem;font-weight:800;letter-spacing:-.02em;color:#fff}
+.hero__card .mini span{font-size:.78rem;color:#a9bccd}
+
+/* service cards overlapping hero */
+.svc-strip{position:relative;z-index:5;margin-top:-96px}
+.svc-strip .grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.svc-card{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);padding:26px 18px 22px;text-align:center;box-shadow:var(--sh);transition:transform .25s var(--ease-out),box-shadow .25s,border-color .2s;display:flex;flex-direction:column;align-items:center}
+.svc-card:hover{transform:translateY(-7px);box-shadow:var(--sh-lg);border-color:var(--blue-line)}
+.svc-card .ic{width:62px;height:62px;border-radius:16px;background:var(--blue-soft);color:var(--blue);display:grid;place-items:center;margin-bottom:14px;transition:.25s}
+.svc-card:hover .ic{background:var(--blue);color:#fff}
+.svc-card h3{font-size:1.04rem;font-weight:800;letter-spacing:-.02em;color:var(--navy);line-height:1.25}
+.svc-card p{font-size:.85rem;color:var(--ink-soft);margin-top:5px}
+
+/* section heading */
+.shead{max-width:720px}
+.shead.center{margin:0 auto;text-align:center}
+.shead h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.9rem,3.6vw,2.7rem);letter-spacing:-.01em;line-height:1.12;color:var(--navy);margin-top:12px}
+.shead p{margin-top:14px;color:var(--ink-soft);font-size:1.06rem}
+
+/* about */
+.about__wrap{display:grid;grid-template-columns:.92fr 1.08fr;gap:56px;align-items:center}
+.about__visual{position:relative}
+.about__panel{position:relative;border-radius:22px;overflow:hidden;background:linear-gradient(160deg,var(--navy-3),var(--navy-2));color:#fff;padding:42px 38px;box-shadow:var(--sh-lg);min-height:420px;display:flex;flex-direction:column;justify-content:flex-end}
+.about__panel .wm{position:absolute;right:-30px;top:-20px;width:280px;opacity:.10;filter:grayscale(0) brightness(2)}
+.about__panel .est{font-family:var(--serif);font-style:italic;font-size:1.15rem;color:#bcd6ea;position:relative;z-index:1}
+.about__panel .big{font-family:var(--sans);font-weight:800;font-size:3.4rem;line-height:1;letter-spacing:-.03em;margin:6px 0 4px;position:relative;z-index:1}
+.about__panel .big span{color:#5db4e6}
+.about__panel .sub{color:#9fb6c9;position:relative;z-index:1}
+.about__panel .rule{height:1px;background:rgba(255,255,255,.14);margin:24px 0;position:relative;z-index:1}
+.about__panel ul{list-style:none;display:grid;gap:12px;position:relative;z-index:1}
+.about__panel li{display:flex;align-items:center;gap:12px;font-weight:600;color:#eaf2f9}
+.about__panel li svg{flex:0 0 auto;color:#5db4e6}
+.about__badge{position:absolute;right:-22px;bottom:30px;background:#fff;border-radius:16px;box-shadow:var(--sh-lg);padding:16px 20px;display:flex;align-items:center;gap:14px}
+.about__badge .n{font-family:var(--sans);font-weight:800;font-size:2.1rem;color:var(--orange);letter-spacing:-.03em;line-height:1}
+.about__badge .t{font-size:.82rem;color:var(--ink-soft);font-weight:600;line-height:1.25}
+.about__body h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.9rem,3.4vw,2.6rem);letter-spacing:-.01em;line-height:1.14;color:var(--navy);margin:12px 0 16px}
+.about__body p{color:var(--ink-soft);margin-bottom:16px}
+.about__body .cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:24px}
+
+/* stats band */
+.stats{background:var(--navy);color:#fff}
+.stats .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+.stat{position:relative;padding:8px}
+.stat:not(:last-child)::after{content:"";position:absolute;right:-12px;top:16%;height:68%;width:1px;background:rgba(255,255,255,.12)}
+.stat .n{font-family:var(--sans);font-weight:800;font-size:2.7rem;letter-spacing:-.03em;line-height:1;color:#fff}
+.stat .n span{color:#5db4e6}
+.stat .l{margin-top:8px;color:#aebfce;font-size:.92rem;font-weight:600}
+
+/* ll152 */
+.ll152{background:var(--bg-soft)}
+.ll152__wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center}
+.ll152__card{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--sh);overflow:hidden}
+.ll152__card .hd{background:var(--navy);color:#fff;padding:16px 22px;font-weight:800;letter-spacing:-.01em;display:flex;align-items:center;gap:10px}
+.ll152__card .hd .tag{margin-left:auto;background:var(--orange);font-size:.72rem;padding:4px 10px;border-radius:var(--pill);letter-spacing:.03em}
+.ll152 table{width:100%;border-collapse:collapse}
+.ll152 td,.ll152 th{padding:12px 22px;font-size:.92rem;text-align:left;border-bottom:1px solid var(--line)}
+.ll152 th{background:var(--bg-soft2);color:var(--navy);font-weight:800;font-size:.78rem;text-transform:uppercase;letter-spacing:.06em}
+.ll152 tr:last-child td{border-bottom:none}
+.ll152 tr.now td{background:rgba(224,83,44,.07);font-weight:700;color:var(--navy)}
+.ll152 tr.now td:first-child{box-shadow:inset 3px 0 0 var(--orange)}
+.ll152 .note{font-size:.86rem;color:var(--ink-soft);padding:14px 22px;background:var(--bg-soft)}
+
+/* services grid */
+.svcs .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:52px}
+.scard{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);padding:30px 28px;box-shadow:var(--sh-sm);transition:transform .25s var(--ease-out),box-shadow .25s,border-color .2s}
+.scard:hover{transform:translateY(-6px);box-shadow:var(--sh);border-color:var(--blue-line)}
+.scard .ic{width:56px;height:56px;border-radius:14px;background:linear-gradient(150deg,var(--blue),var(--blue-bright));color:#fff;display:grid;place-items:center;margin-bottom:16px;box-shadow:0 10px 22px rgba(30,111,176,.28)}
+.scard.alt .ic{background:linear-gradient(150deg,var(--orange),var(--flame));box-shadow:0 10px 22px rgba(224,83,44,.28)}
+.scard h3{font-size:1.18rem;font-weight:800;letter-spacing:-.02em;color:var(--navy)}
+.scard p{margin-top:8px;color:var(--ink-soft);font-size:.95rem}
+
+/* why */
+.why{background:var(--bg-soft)}
+.why .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:52px}
+.feat{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);padding:30px 26px;box-shadow:var(--sh-sm);display:flex;gap:16px;align-items:flex-start;transition:transform .25s var(--ease-out),box-shadow .25s}
+.feat:hover{transform:translateY(-5px);box-shadow:var(--sh)}
+.feat .ic{width:48px;height:48px;flex:0 0 auto;border-radius:12px;background:var(--blue-soft);color:var(--blue);display:grid;place-items:center}
+.feat h3{font-size:1.08rem;font-weight:800;letter-spacing:-.02em;color:var(--navy)}
+.feat p{margin-top:5px;color:var(--ink-soft);font-size:.93rem}
+
+/* testimonials */
+.quotes .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:52px}
+.quote{background:#fff;border:1px solid var(--line);border-top:3px solid var(--orange);border-radius:var(--r-lg);padding:30px 28px;box-shadow:var(--sh-sm)}
+.quote .stars{color:var(--flame);letter-spacing:2px;font-size:1.05rem}
+.quote blockquote{font-family:var(--serif);font-size:1.08rem;color:var(--ink);line-height:1.55;margin:12px 0 18px}
+.quote .who{display:flex;align-items:center;gap:12px}
+.quote .av{width:44px;height:44px;border-radius:50%;background:linear-gradient(150deg,var(--blue),var(--blue-bright));color:#fff;display:grid;place-items:center;font-weight:800}
+.quote .who b{display:block;color:var(--navy)}
+.quote .who span{font-size:.85rem;color:var(--muted)}
+
+/* contact */
+.contact{background:var(--navy);color:#fff}
+.contact__wrap{display:grid;grid-template-columns:1fr 1.04fr;gap:54px;align-items:start}
+.contact h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.9rem,3.6vw,2.7rem);letter-spacing:-.01em;line-height:1.12;margin-top:12px}
+.contact .lead{color:#b7cadb;margin:16px 0 30px;font-size:1.05rem}
+.cline{display:flex;align-items:flex-start;gap:15px;padding:16px 0;border-top:1px solid rgba(255,255,255,.1)}
+.cline:first-of-type{border-top:none}
+.cline .ic{width:44px;height:44px;flex:0 0 auto;border-radius:12px;background:rgba(43,133,187,.18);color:#5db4e6;display:grid;place-items:center}
+.cline .k{font-size:.8rem;color:#90a6b9;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+.cline .v{font-size:1.12rem;font-weight:700;letter-spacing:-.01em}
+.cline .v a:hover{color:#5db4e6}
+.cmap{margin-top:24px;border-radius:var(--r-lg);overflow:hidden;border:1px solid rgba(255,255,255,.12);height:200px}
+.cmap iframe{width:100%;height:100%;border:0;filter:grayscale(.2) contrast(1.05)}
+/* form */
+.form{background:#fff;border-radius:22px;padding:34px 32px;box-shadow:var(--sh-lg);color:var(--ink)}
+.form h3{font-family:var(--sans);font-weight:800;font-size:1.4rem;letter-spacing:-.02em;color:var(--navy)}
+.form .sml{color:var(--ink-soft);font-size:.92rem;margin:4px 0 20px}
+.fg{margin-bottom:15px}
+.fg.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fg label{display:block;font-size:.82rem;font-weight:700;color:var(--navy);margin-bottom:6px}
+.fg label .req{color:var(--orange)}
+.fg input,.fg select,.fg textarea{width:100%;font-family:var(--sans);font-size:1rem;color:var(--ink);background:var(--bg-soft);border:1.5px solid var(--line);border-radius:var(--r-sm);padding:12px 14px;transition:border-color .18s,background .18s,box-shadow .18s}
+.fg textarea{min-height:110px;resize:vertical}
+.fg input:focus,.fg select:focus,.fg textarea:focus{outline:none;border-color:var(--blue);background:#fff;box-shadow:0 0 0 3px rgba(30,111,176,.14)}
+.form .btn{width:100%;margin-top:6px}
+.hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;opacity:0}
+.form .cstatus{margin-top:12px;font-size:.9rem;font-weight:600;color:var(--orange-2);display:none}
+.form .cstatus.show{display:block}
+.csuccess{display:none;text-align:center;padding:18px 8px}
+.csuccess.show{display:block}
+.csuccess .ic{width:64px;height:64px;border-radius:50%;background:#e9f7ee;color:#1f9d55;display:grid;place-items:center;margin:0 auto 14px}
+.csuccess h3{color:var(--navy)}
+.csuccess p{color:var(--ink-soft);max-width:340px;margin:8px auto 0}
+
+/* cta boxes */
+.ctaboxes{background:var(--navy);padding-bottom:0}
+.ctaboxes .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;position:relative;top:46px}
+.cbox{border-radius:var(--r-lg);padding:26px 24px;color:#fff;display:flex;align-items:center;gap:16px;box-shadow:var(--sh-lg);transition:transform .25s}
+.cbox:hover{transform:translateY(-4px)}
+.cbox .ic{width:50px;height:50px;flex:0 0 auto;border-radius:12px;background:rgba(255,255,255,.18);display:grid;place-items:center}
+.cbox b{display:block;font-size:1.16rem;font-weight:800;letter-spacing:-.02em}
+.cbox span{font-size:.86rem;opacity:.9}
+.cbox.b1{background:linear-gradient(150deg,var(--blue),var(--blue-2))}
+.cbox.b2{background:linear-gradient(150deg,var(--orange),var(--orange-2))}
+.cbox.b3{background:linear-gradient(150deg,var(--navy-3),var(--navy-2))}
+
+/* footer */
+.foot{background:var(--navy-2);color:#9fb2c4;padding:104px 0 0}
+.foot__grid{display:grid;grid-template-columns:1.7fr 1fr 1.3fr;gap:44px}
+.foot__logo{background:#fff;border-radius:14px;padding:14px 18px;display:inline-block;margin-bottom:18px}
+.foot__logo img{height:46px}
+.foot__about{font-size:.93rem;line-height:1.7;max-width:330px}
+.foot h5{color:#fff;font-size:.74rem;letter-spacing:.13em;text-transform:uppercase;font-weight:800;margin-bottom:16px}
+.foot a.fl,.foot .fl{display:flex;gap:10px;align-items:flex-start;color:#9fb2c4;font-size:.94rem;padding:6px 0;transition:color .18s}
+.foot a.fl:hover{color:#fff}
+.foot .fl svg{flex:0 0 auto;color:#5db4e6;margin-top:3px}
+.foot .lic-badge{display:inline-flex;align-items:center;gap:9px;background:rgba(43,133,187,.14);border:1px solid rgba(43,133,187,.3);color:#bfe0f3;font-weight:700;font-size:.82rem;padding:8px 14px;border-radius:var(--pill);margin-top:6px}
+.foot__bottom{max-width:var(--max);margin:54px auto 0;padding:22px 28px 30px;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:.84rem;color:#7e93a7}
+.foot__bottom a{color:#9fb2c4}.foot__bottom a:hover{color:#fff}
+
+.totop{position:fixed;bottom:24px;right:24px;z-index:998;width:48px;height:48px;border-radius:50%;background:var(--orange);color:#fff;border:none;cursor:pointer;box-shadow:0 12px 26px rgba(224,83,44,.4);display:grid;place-items:center;opacity:0;pointer-events:none;transform:translateY(10px);transition:.3s}
+.totop.show{opacity:1;pointer-events:all;transform:none}
+.totop:hover{background:var(--orange-2);transform:translateY(-3px)}
+
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease-out),transform .7s var(--ease-out)}
+.rv.show{opacity:1;transform:none}
+.rd1{transition-delay:.06s}.rd2{transition-delay:.12s}.rd3{transition-delay:.18s}.rd4{transition-delay:.24s}
+
+@media(max-width:1080px){
+  .hero__in{grid-template-columns:1fr;gap:36px}
+  .svc-strip .grid{grid-template-columns:repeat(3,1fr)}
+  .about__wrap{grid-template-columns:1fr;gap:60px}
+  .about__badge{left:auto;right:24px}
+  .ll152__wrap{grid-template-columns:1fr;gap:30px}
+  .contact__wrap{grid-template-columns:1fr;gap:36px}
+}
+@media(max-width:900px){
+  .nav__links{display:none}.burger{display:flex}
+  .svcs .grid,.why .grid,.quotes .grid{grid-template-columns:1fr 1fr}
+  .stats .grid{grid-template-columns:1fr 1fr;gap:34px 24px}.stat::after{display:none}
+  .foot__grid{grid-template-columns:1fr 1fr}
+  .ctaboxes .grid{grid-template-columns:1fr}
+}
+@media(max-width:680px){
+  .sec{padding:64px 0}
+  .topbar .tb-left .lic,.topbar .tb-right .tb-i.hideS{display:none}
+  .svc-strip{margin-top:-40px}
+  .svc-strip .grid,.svcs .grid,.why .grid,.quotes .grid,.fg.row2{grid-template-columns:1fr}
+  .stats .grid{grid-template-columns:1fr 1fr}
+  .foot__grid{grid-template-columns:1fr}
+  .hero .cta-row .btn{width:100%}
+  .about__badge{position:static;margin-top:18px;display:inline-flex}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+:focus-visible{outline:3px solid var(--orange);outline-offset:2px;border-radius:4px}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="in">
+    <div class="tb-left">
+      <span class="tb-i lic">NYC Licensed Master Plumber <b>#2479</b></span>
+      <span class="tb-i hideS"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>6123 17th Ave, Brooklyn, NY 11204</span>
+    </div>
+    <div class="tb-right">
+      <a class="tb-i" href="mailto:safetyplumber@gmail.com"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>safetyplumber@gmail.com</a>
+      <a class="tb-i" href="tel:7186294000"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7A2 2 0 0 1 22 16.9Z"/></svg>Office: 718-629-4000</a>
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="in">
+    <a href="#top" class="brand" aria-label="Verrazano Plumbing Contractors home">
+      <img src="assets/logo.png" alt="Verrazano Plumbing Contractors Inc.">
+    </a>
+    <ul class="nav__links">
+      <li><a href="#top">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li class="has drop"><a href="#services">Services</a>
+        <div class="drop__menu">
+          <a href="#services">Residential Plumbing</a>
+          <a href="#services">Commercial Plumbing</a>
+          <a href="#services">Water Heaters &amp; Boilers</a>
+          <a href="#services">Drain &amp; Sewer Cleaning</a>
+          <a href="#services">Gas Piping &amp; Leak Repair</a>
+          <a href="#ll152">LL152 Gas Inspections</a>
+        </div>
+      </li>
+      <li><a href="#why">Why Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li class="nav__cta"><a href="#contact" class="btn btn--org btn--sm">Free Estimate</a></li>
+    </ul>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile" id="mobile">
+  <a href="#top">Home</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#ll152">LL152 Inspections</a>
+  <a href="#why">Why Us</a>
+  <a href="#contact">Contact</a>
+  <a href="tel:3474089710" class="m-cta btn btn--org">Call 347-408-9710</a>
+</div>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="in hero__in">
+    <div class="rv">
+      <span class="pill-badge"><span class="dot"></span> Family-Owned &amp; Operated · 18+ Years in Brooklyn</span>
+      <h1>Brooklyn's trusted <span class="u">master plumbers</span> — for home &amp; business.</h1>
+      <p class="sub">Verrazano Plumbing Contractors Inc. is a full-service, family-owned plumbing company serving residential and commercial clients across Brooklyn and the five boroughs. No job too small or too large.</p>
+      <div class="cta-row">
+        <a href="tel:3474089710" class="btn btn--org">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7A2 2 0 0 1 22 16.9Z"/></svg>
+          Call 347-408-9710
+        </a>
+        <a href="#contact" class="btn btn--ghost">Request Service <svg class="arr" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="trust">
+        <span><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg>Licensed &amp; Insured</span>
+        <span><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg>Commercial &amp; Residential</span>
+        <span><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg>Free Estimates</span>
+      </div>
+    </div>
+    <div class="hero__card rv rd2">
+      <h3>Need a plumber now?</h3>
+      <p>We answer the phone and show up — fast, honest, and fully licensed.</p>
+      <div class="emerg">
+        <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7A2 2 0 0 1 22 16.9Z"/></svg></span>
+        <div><b><a href="tel:3474089710" style="color:#fff">347-408-9710</a></b><span>Service &amp; emergencies</span></div>
+      </div>
+      <div class="mini">
+        <div><b>18+</b><span>Years experience</span></div>
+        <div><b>#2479</b><span>Master Plumber lic.</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- SERVICE STRIP -->
+<section class="in svc-strip">
+  <div class="grid">
+    <a href="#services" class="svc-card rv rd1">
+      <span class="ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h8V3M11 11 4 4M14 21a5 5 0 0 0 5-5c0-3-5-9-5-9s-5 6-5 9a5 5 0 0 0 5 5Z"/></svg></span>
+      <h3>Residential</h3><p>Homes &amp; apartments</p>
+    </a>
+    <a href="#services" class="svc-card rv rd2">
+      <span class="ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4v18M19 21V11l-7-4M9 9v.01M9 13v.01M9 17v.01"/></svg></span>
+      <h3>Commercial</h3><p>Buildings &amp; business</p>
+    </a>
+    <a href="#services" class="svc-card rv rd3">
+      <span class="ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M9 6h6M12 11v4M10.5 12.5h3"/></svg></span>
+      <h3>Water Heaters</h3><p>&amp; heating systems</p>
+    </a>
+    <a href="#services" class="svc-card rv rd4">
+      <span class="ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4v6a4 4 0 0 0 4 4h6a4 4 0 0 1 4 4v2M14 10l4 4-4 4"/></svg></span>
+      <h3>Drain &amp; Sewer</h3><p>Cleaning &amp; repair</p>
+    </a>
+    <a href="#ll152" class="svc-card rv rd4">
+      <span class="ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 21a5 5 0 0 0 5-5c0-3-5-9-5-9s-5 6-5 9a5 5 0 0 0 5 5Z"/><path d="M4 3v6M2 5h4"/></svg></span>
+      <h3>Gas Piping</h3><p>LL152 inspections</p>
+    </a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="sec" id="about">
+  <div class="in about__wrap">
+    <div class="about__visual rv">
+      <div class="about__panel">
+        <img class="wm" src="assets/mark.png" alt="">
+        <span class="est">Established in Brooklyn</span>
+        <div class="big">18<span>+</span></div>
+        <div class="sub">years serving homes &amp; businesses across NYC</div>
+        <div class="rule"></div>
+        <ul>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg> Family-owned &amp; operated</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg> Commercial &amp; residential</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg> NYC Licensed Master Plumber #2479</li>
+        </ul>
+      </div>
+      <div class="about__badge">
+        <span class="n">24/7</span>
+        <span class="t">Service &amp;<br>emergency calls</span>
+      </div>
+    </div>
+    <div class="about__body rv rd1">
+      <span class="eyebrow">About Verrazano Plumbing</span>
+      <h2>A family-owned plumbing company built on doing it right.</h2>
+      <p>Verrazano Plumbing Contractors Inc. is a full-service, family-owned and operated company providing professional service to both the commercial and residential sectors — with the ability to service and install complete plumbing systems.</p>
+      <p>In addition to preventive-maintenance checks, service of existing equipment, and installation of new equipment, we can help you find ways to reduce your energy bills with high-efficiency equipment. Backed by more than 18 years of experience, our team of dedicated plumbers is ready to meet your needs. We consider all jobs, small or large.</p>
+      <div class="cta-row">
+        <a href="#contact" class="btn btn--blue">Get a Free Estimate <svg class="arr" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="tel:7186294000" class="btn btn--outline">Office: 718-629-4000</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="in" style="padding-top:54px;padding-bottom:54px">
+    <div class="grid">
+      <div class="stat rv rd1"><div class="n">18<span>+</span></div><div class="l">Years of experience</div></div>
+      <div class="stat rv rd2"><div class="n">#2479</div><div class="l">NYC Master Plumber license</div></div>
+      <div class="stat rv rd3"><div class="n">2</div><div class="l">Sectors — home &amp; commercial</div></div>
+      <div class="stat rv rd4"><div class="n">24/7</div><div class="l">Service &amp; emergency calls</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- LL152 -->
+<section class="sec ll152" id="ll152">
+  <div class="in ll152__wrap">
+    <div class="rv">
+      <span class="eyebrow org">NYC Compliance</span>
+      <h2 style="font-family:var(--serif);font-weight:600;font-size:clamp(1.8rem,3.4vw,2.5rem);color:var(--navy);letter-spacing:-.01em;line-height:1.14;margin:12px 0 14px">Local Law 152 gas piping inspections — done right.</h2>
+      <p style="color:var(--ink-soft);margin-bottom:16px">NYC Local Law 152 requires periodic inspection of building gas piping systems by a Licensed Master Plumber. As licensed master plumbers, we perform LL152 inspections, certifications, and any repairs needed to keep your building compliant.</p>
+      <p style="color:var(--ink-soft)">Not sure of your Community District? <a href="https://communityprofiles.planning.nyc.gov/" target="_blank" rel="noopener" style="color:var(--blue);font-weight:700;border-bottom:1px solid var(--blue-line)">Look it up here</a>, then call us to schedule your inspection.</p>
+      <a href="#contact" class="btn btn--blue" style="margin-top:24px">Schedule an inspection</a>
+    </div>
+    <div class="ll152__card rv rd2">
+      <div class="hd">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        LL152 Inspection Cycle 2
+        <span class="tag">Now in 2026</span>
+      </div>
+      <table>
+        <thead><tr><th>Inspection year</th><th>Community Districts due</th></tr></thead>
+        <tbody>
+          <tr><td>2024</td><td>1, 3 &amp; 10 — all boroughs</td></tr>
+          <tr><td>2025</td><td>2, 5, 7, 13 &amp; 18</td></tr>
+          <tr class="now"><td>2026</td><td>4, 6, 8, 9 &amp; 16</td></tr>
+          <tr><td>2027</td><td>11, 12, 14, 15 &amp; 17</td></tr>
+        </tbody>
+      </table>
+      <div class="note">Buildings in Community Districts 4, 6, 8, 9 &amp; 16 must be inspected during the 2026 calendar year. Call <a href="tel:7186294000" style="color:var(--blue);font-weight:700">718-629-4000</a> to schedule.</div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="sec svcs" id="services">
+  <div class="in">
+    <div class="shead center rv">
+      <span class="eyebrow">What We Do</span>
+      <h2>Complete plumbing services for Brooklyn &amp; NYC</h2>
+      <p>From a leaky faucet to a full system installation, we handle every part of your plumbing — for homes, apartment buildings, and commercial properties.</p>
+    </div>
+    <div class="grid">
+      <div class="scard rv rd1"><span class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h8V3M11 11 4 4M14 21a5 5 0 0 0 5-5c0-3-5-9-5-9s-5 6-5 9a5 5 0 0 0 5 5Z"/></svg></span><h3>Residential Plumbing</h3><p>Repairs, fixtures, re-pipes and installations for homes and apartments — clean, courteous, and done right.</p></div>
+      <div class="scard rv rd2"><span class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4v18M19 21V11l-7-4"/></svg></span><h3>Commercial Plumbing</h3><p>Service and installation for buildings, offices and businesses — complete systems of any scale or complexity.</p></div>
+      <div class="scard alt rv rd3"><span class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M9 6h6M12 11v4M10.5 12.5h3"/></svg></span><h3>Water Heaters &amp; Boilers</h3><p>Install, service and repair water heaters and heating equipment — including high-efficiency upgrades.</p></div>
+      <div class="scard rv rd1"><span class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4v6a4 4 0 0 0 4 4h6a4 4 0 0 1 4 4v2M14 10l4 4-4 4"/></svg></span><h3>Drain &amp; Sewer Cleaning</h3><p>Clogged drains, backups and sewer lines cleared fast, with camera inspection to find the real problem.</p></div>
+      <div class="scard alt rv rd2"><span class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 21a5 5 0 0 0 5-5c0-3-5-9-5-9s-5 6-5 9a5 5 0 0 0 5 5Z"/><path d="M4 3v6M2 5h4"/></svg></span><h3>Gas Piping &amp; Leak Repair</h3><p>Gas line installation, leak detection and repair by a licensed master plumber — plus LL152 inspections.</p></div>
+      <div class="scard rv rd3"><span class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18M7 7V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2M10 11v6M14 11v6M5 7l1 13a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2l1-13"/></svg></span><h3>Fixture Installation</h3><p>Sinks, toilets, faucets, tubs and touchless fixtures — supplied and installed to last.</p></div>
+      <div class="scard rv rd1"><span class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M9 15l2 2 3-4"/></svg></span><h3>Preventive Maintenance</h3><p>Scheduled checks and service of existing equipment to catch small issues before they become big ones.</p></div>
+      <div class="scard alt rv rd2"><span class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></svg></span><h3>High-Efficiency Upgrades</h3><p>Reduce energy bills with modern, high-efficiency equipment recommended and installed by our team.</p></div>
+      <div class="scard rv rd3"><span class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l2.5 2.5M16.5 16.5 19 19M19 5l-2.5 2.5M7.5 16.5 5 19"/><circle cx="12" cy="12" r="3"/></svg></span><h3>24/7 Emergency Service</h3><p>Burst pipes and urgent failures don't wait — call us any time and we'll be there.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="sec why" id="why">
+  <div class="in">
+    <div class="shead center rv">
+      <span class="eyebrow">Why Verrazano</span>
+      <h2>The plumber Brooklyn keeps calling back</h2>
+      <p>Backed by 18+ years of experience and a licensed master plumber on every job, we make plumbing simple, honest, and dependable.</p>
+    </div>
+    <div class="grid">
+      <div class="feat rv rd1"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></span><div><h3>Licensed &amp; Insured</h3><p>NYC Licensed Master Plumber #2479 — fully insured, code-compliant work you can trust.</p></div></div>
+      <div class="feat rv rd2"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><div><h3>Family-Owned</h3><p>A family business that treats your home or building like our own — courteous, clean, and respectful.</p></div></div>
+      <div class="feat rv rd3"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><h3>Fast Response</h3><p>We answer the phone and show up on time — with 24/7 availability for true emergencies.</p></div></div>
+      <div class="feat rv rd1"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span><div><h3>Upfront Pricing</h3><p>Clear, honest estimates before we start — no surprises, and free estimates on new work.</p></div></div>
+      <div class="feat rv rd2"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4v18M19 21V11l-7-4"/></svg></span><div><h3>Home &amp; Commercial</h3><p>From a single faucet to a whole building's system — no job is too small or too large.</p></div></div>
+      <div class="feat rv rd3"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></svg></span><div><h3>Energy Savings</h3><p>We help you cut energy bills with high-efficiency equipment and smart recommendations.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS (placeholder copy — replace with real reviews) -->
+<section class="sec quotes">
+  <div class="in">
+    <div class="shead center rv">
+      <span class="eyebrow">Reviews</span>
+      <h2>Trusted across Brooklyn</h2>
+    </div>
+    <div class="grid">
+      <div class="quote rv rd1"><div class="stars">★★★★★</div><blockquote>"Showed up fast, fixed a burst pipe, and left everything spotless. Honest pricing and real professionals."</blockquote><div class="who"><div class="av">JM</div><div><b>Joseph M.</b><span>Borough Park, Brooklyn</span></div></div></div>
+      <div class="quote rv rd2"><div class="stars">★★★★★</div><blockquote>"We use Verrazano for our building's plumbing and LL152 inspections. Reliable, licensed, and easy to work with."</blockquote><div class="who"><div class="av">RS</div><div><b>Rachel S.</b><span>Property Manager, Brooklyn</span></div></div></div>
+      <div class="quote rv rd3"><div class="stars">★★★★★</div><blockquote>"New water heater installed same day. Explained everything and saved us money on the energy bill. Highly recommend."</blockquote><div class="who"><div class="av">DK</div><div><b>David K.</b><span>Bensonhurst, Brooklyn</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="sec contact" id="contact">
+  <div class="in contact__wrap">
+    <div class="rv">
+      <span class="eyebrow" style="color:#5db4e6">Get In Touch</span>
+      <h2>Request service or a free estimate</h2>
+      <p class="lead">Call, email, or send us a message — we'll be glad to help with any and all of your plumbing needs.</p>
+      <div class="cline"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7A2 2 0 0 1 22 16.9Z"/></svg></span><div><div class="k">Service &amp; Emergencies</div><div class="v"><a href="tel:3474089710">347-408-9710</a></div></div></div>
+      <div class="cline"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7A2 2 0 0 1 22 16.9Z"/></svg></span><div><div class="k">Office</div><div class="v"><a href="tel:7186294000">718-629-4000</a></div></div></div>
+      <div class="cline"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><div><div class="k">Email</div><div class="v"><a href="mailto:safetyplumber@gmail.com">safetyplumber@gmail.com</a></div></div></div>
+      <div class="cline"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></span><div><div class="k">Address</div><div class="v">6123 17th Ave, Brooklyn, NY 11204</div></div></div>
+      <div class="cmap">
+        <iframe loading="lazy" title="Verrazano Plumbing location" src="https://maps.google.com/maps?q=6123%2017th%20Ave%2C%20Brooklyn%2C%20NY%2011204&z=15&output=embed"></iframe>
+      </div>
+    </div>
+
+    <div class="form rv rd2">
+      <h3>Send us a message</h3>
+      <p class="sml">Tell us what you need and the best way to reach you. <b style="color:var(--orange)">*</b> required.</p>
+      <form id="lead" novalidate>
+        <div class="fg row2">
+          <div><label for="f-name">Name <span class="req">*</span></label><input id="f-name" type="text" autocomplete="name" required></div>
+          <div><label for="f-phone">Phone <span class="req">*</span></label><input id="f-phone" type="tel" autocomplete="tel" required></div>
+        </div>
+        <div class="fg"><label for="f-email">Email <span class="req">*</span></label><input id="f-email" type="email" autocomplete="email" required></div>
+        <div class="fg row2">
+          <div><label for="f-service">Service needed</label>
+            <select id="f-service">
+              <option value="">Select…</option>
+              <option>Residential plumbing</option>
+              <option>Commercial plumbing</option>
+              <option>Water heater / heating</option>
+              <option>Drain &amp; sewer</option>
+              <option>Gas piping / LL152 inspection</option>
+              <option>Emergency service</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div><label for="f-prop">Property type</label>
+            <select id="f-prop"><option value="">Select…</option><option>Home / apartment</option><option>Commercial / building</option></select>
+          </div>
+        </div>
+        <div class="fg"><label for="f-addr">Job address</label><input id="f-addr" type="text" autocomplete="street-address" placeholder="Street, Brooklyn, NY"></div>
+        <div class="fg"><label for="f-msg">How can we help?</label><textarea id="f-msg" placeholder="Describe the plumbing issue or project…"></textarea></div>
+        <input type="text" id="company" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button type="submit" class="btn btn--org" id="cSubmit">Send message
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7Z"/></svg></button>
+        <div class="cstatus" id="cStatus"></div>
+      </form>
+      <div class="csuccess" id="cSuccess">
+        <div class="ic"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+        <h3>Thanks — your email is ready to send!</h3>
+        <p>Your message opened in your email app. Prefer to talk now? Call <a href="tel:3474089710" style="color:var(--blue);font-weight:700">347-408-9710</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BOXES -->
+<section class="ctaboxes">
+  <div class="in">
+    <div class="grid">
+      <a href="#contact" class="cbox b1 rv rd1"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13l2 2 4-4"/></svg></span><div><b>Free Estimate</b><span>Request a quote</span></div></a>
+      <a href="tel:3474089710" class="cbox b2 rv rd2"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7A2 2 0 0 1 22 16.9Z"/></svg></span><div><b>347-408-9710</b><span>Service &amp; emergencies</span></div></a>
+      <a href="tel:7186294000" class="cbox b3 rv rd3"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></span><div><b>Office: 718-629-4000</b><span>Mon–Fri, business hours</span></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="in foot__grid">
+    <div>
+      <span class="foot__logo"><img src="assets/logo.png" alt="Verrazano Plumbing Contractors Inc."></span>
+      <p class="foot__about">Family-owned, full-service plumbing for the commercial and residential sectors across Brooklyn and NYC. We install and service complete plumbing systems — no job too small or too large.</p>
+      <div class="lic-badge"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg> NYC Licensed Master Plumber #2479</div>
+    </div>
+    <div>
+      <h5>Services</h5>
+      <a class="fl" href="#services">Residential Plumbing</a>
+      <a class="fl" href="#services">Commercial Plumbing</a>
+      <a class="fl" href="#services">Water Heaters &amp; Boilers</a>
+      <a class="fl" href="#services">Drain &amp; Sewer</a>
+      <a class="fl" href="#ll152">LL152 Gas Inspections</a>
+    </div>
+    <div>
+      <h5>Contact</h5>
+      <a class="fl" href="tel:3474089710"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7A2 2 0 0 1 22 16.9Z"/></svg>Service: 347-408-9710</a>
+      <a class="fl" href="tel:7186294000"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>Office: 718-629-4000</a>
+      <a class="fl" href="mailto:safetyplumber@gmail.com"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>safetyplumber@gmail.com</a>
+      <span class="fl"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>6123 17th Ave, Brooklyn, NY 11204</span>
+    </div>
+  </div>
+  <div class="foot__bottom">
+    <span>© 2026 Verrazano Plumbing Contractors Inc. All rights reserved. · Licensed &amp; Insured</span>
+    <span>Designed &amp; built by <a href="https://bhwebsolutions.com" target="_blank" rel="noopener">BH Web Solutions</a></span>
+  </div>
+</footer>
+
+<button class="totop" id="totop" aria-label="Back to top"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+
+<script>
+(function(){
+  var nav=document.getElementById('nav'),burger=document.getElementById('burger'),mobile=document.getElementById('mobile'),totop=document.getElementById('totop');
+  function onScroll(){var y=window.scrollY||0;nav.classList.toggle('scrolled',y>10);totop.classList.toggle('show',y>700);}
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+  function toggle(){var a=mobile.classList.toggle('on');burger.classList.toggle('on',a);burger.setAttribute('aria-expanded',a);document.body.style.overflow=a?'hidden':'';}
+  burger.addEventListener('click',toggle);
+  mobile.querySelectorAll('a').forEach(function(l){l.addEventListener('click',function(){if(mobile.classList.contains('on'))toggle();});});
+  totop.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&mobile.classList.contains('on'))toggle();});
+
+  /* Contact form -> opens a pre-filled email to the office.
+     (Static site, no backend. To collect submissions automatically later,
+      swap this for a Forminit/Formspree endpoint like the other BH sites.) */
+  var form=document.getElementById('lead'),btn=document.getElementById('cSubmit'),status=document.getElementById('cStatus'),success=document.getElementById('cSuccess');
+  function val(id){var el=document.getElementById(id);return el?el.value.trim():'';}
+  if(form){
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      if(document.getElementById('company').value){success.classList.add('show');form.style.display='none';return;} // honeypot
+      if(!val('f-name')||!val('f-phone')||!val('f-email')){status.textContent='Please add your name, phone and email so we can reach you.';status.classList.add('show');return;}
+      status.classList.remove('show');
+      var body=
+        'Name: '+val('f-name')+'\n'+
+        'Phone: '+val('f-phone')+'\n'+
+        'Email: '+val('f-email')+'\n'+
+        'Service needed: '+val('f-service')+'\n'+
+        'Property type: '+val('f-prop')+'\n'+
+        'Job address: '+val('f-addr')+'\n\n'+
+        'Message:\n'+val('f-msg');
+      var subject='Website request — '+(val('f-service')||'Plumbing service')+' ('+val('f-name')+')';
+      window.location.href='mailto:safetyplumber@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+      form.style.display='none';success.classList.add('show');
+    });
+  }
+
+  /* scroll reveal */
+  var els=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el){io.observe(el);});
+  }else{els.forEach(function(el){el.classList.add('show');});}
+})();
+</script>
+</body>
+</html>
