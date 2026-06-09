@@ -372,3 +372,23 @@ img{max-width:100%;display:block}
   .srow .ic{width:54px;height:54px}
 }
 .nav__links>li>a[aria-current=page]{color:var(--blue);background:var(--bg-soft)}
+
+/* ---- image cards (case studies + blog) ---- */
+.wcard .top img,.bcard .top img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.wcard .top::after,.bcard .top::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,33,56,.04),rgba(10,33,56,.42))}
+.wcard .badge,.bcard .cat{z-index:2}
+.wcard .top,.bcard .top{height:180px}
+
+/* ---- blog post article ---- */
+.post{max-width:780px;margin:0 auto}
+.backlink{display:inline-flex;align-items:center;gap:7px;font-weight:700;color:var(--blue);margin-bottom:18px;font-size:.92rem}
+.backlink:hover{color:var(--blue-2)}
+.post .meta{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:14px}
+.post .meta .tag{background:var(--blue-soft);color:var(--blue-2);padding:5px 12px;border-radius:var(--pill);font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em}
+.post .meta .date{color:var(--muted);font-size:.9rem;font-weight:600}
+.post h1{font-family:var(--sans);font-weight:800;font-size:clamp(1.95rem,3.8vw,2.7rem);letter-spacing:-.03em;line-height:1.1;color:var(--navy);margin-bottom:14px}
+.post-hero{border-radius:var(--r-lg);overflow:hidden;margin:8px 0 30px;box-shadow:var(--sh);aspect-ratio:16/7;background:var(--bg-soft2)}
+.post-hero img{width:100%;height:100%;object-fit:cover;display:block}
+.post .lead{font-size:1.2rem;color:var(--ink);font-weight:600;line-height:1.5;margin-bottom:20px}
+.post-note{margin-top:26px;background:var(--blue-soft);border:1px solid var(--blue-line);border-radius:var(--r);padding:18px 20px;font-size:.95rem;color:var(--navy)}
+.post-note b{color:var(--blue-2)}
