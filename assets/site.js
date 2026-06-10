@@ -8,28 +8,55 @@
   totop.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
   document.addEventListener('keydown',function(e){if(e.key==='Escape'&&mobile.classList.contains('on'))toggle();});
 
-  /* Contact form -> opens a pre-filled email to the office.
-     (Static site, no backend. To collect submissions automatically later,
-      swap this for a Forminit/Formspree endpoint like the other BH sites.) */
+  /* ===== Contact form =====
+     Submits to Forminit (https://forminit.com) -> emails leads to
+     safetyplumber@gmail.com. Paste the Verrazano Forminit form ID below.
+     Until an ID is set (or if Forminit is unreachable), it falls back to
+     opening a pre-filled email so the form always does something. */
+  var FORMINIT_FORM_ID = '';   /* <-- PASTE VERRAZANO FORMINIT FORM ID HERE */
+
   var form=document.getElementById('lead'),btn=document.getElementById('cSubmit'),status=document.getElementById('cStatus'),success=document.getElementById('cSuccess');
   function val(id){var el=document.getElementById(id);return el?el.value.trim():'';}
+  function showSuccess(msg){var p=success.querySelector('p');if(msg&&p)p.innerHTML=msg;form.style.display='none';success.classList.add('show');try{success.scrollIntoView({behavior:'smooth',block:'center'});}catch(e){}}
+  function mailtoFallback(){
+    var body='Name: '+val('f-name')+'\nPhone: '+val('f-phone')+'\nEmail: '+val('f-email')+
+      '\nService needed: '+val('f-service')+'\nProperty type: '+val('f-prop')+
+      '\nJob address: '+val('f-addr')+'\n\nMessage:\n'+val('f-msg');
+    var subject='Website request — '+(val('f-service')||'Plumbing service')+' ('+val('f-name')+')';
+    window.location.href='mailto:safetyplumber@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+    showSuccess('Your message is ready in your email app — please hit send and we\'ll get right back to you. Prefer to talk? Call <a href="tel:3474089710" style="color:var(--blue);font-weight:700">347-408-9710</a>.');
+  }
   if(form){
-    form.addEventListener('submit',function(e){
+    form.addEventListener('submit',async function(e){
       e.preventDefault();
-      if(document.getElementById('company').value){success.classList.add('show');form.style.display='none';return;} // honeypot
+      if(document.getElementById('company').value){showSuccess();return;} // honeypot
       if(!val('f-name')||!val('f-phone')||!val('f-email')){status.textContent='Please add your name, phone and email so we can reach you.';status.classList.add('show');return;}
       status.classList.remove('show');
-      var body=
-        'Name: '+val('f-name')+'\n'+
-        'Phone: '+val('f-phone')+'\n'+
-        'Email: '+val('f-email')+'\n'+
-        'Service needed: '+val('f-service')+'\n'+
-        'Property type: '+val('f-prop')+'\n'+
-        'Job address: '+val('f-addr')+'\n\n'+
-        'Message:\n'+val('f-msg');
-      var subject='Website request — '+(val('f-service')||'Plumbing service')+' ('+val('f-name')+')';
-      window.location.href='mailto:safetyplumber@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
-      form.style.display='none';success.classList.add('show');
+
+      if(FORMINIT_FORM_ID && typeof Forminit!=='undefined'){
+        var label=btn.innerHTML; btn.disabled=true; btn.textContent='Sending…';
+        try{
+          var fd=new FormData();
+          fd.append('fi-sender-fullName',val('f-name'));
+          fd.append('fi-sender-email',val('f-email'));
+          fd.append('fi-text-phone',val('f-phone'));
+          fd.append('fi-text-service',val('f-service'));
+          fd.append('fi-text-property',val('f-prop'));
+          fd.append('fi-text-address',val('f-addr'));
+          fd.append('fi-text-message',val('f-msg'));
+          fd.append('fi-text-submitted_at',new Date().toISOString());
+          fd.append('fi-text-landing_page',location.href);
+          var res=await new Forminit().submit(FORMINIT_FORM_ID,fd);
+          if(res&&res.error)throw new Error('failed');
+          showSuccess();
+        }catch(ex){
+          btn.disabled=false; btn.innerHTML=label;
+          status.textContent='Something went wrong sending your message. Please call 347-408-9710 or email safetyplumber@gmail.com.';
+          status.classList.add('show');
+        }
+      } else {
+        mailtoFallback();   // no Forminit ID set yet -> open prefilled email
+      }
     });
   }
 
