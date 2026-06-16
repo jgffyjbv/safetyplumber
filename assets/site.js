@@ -14,7 +14,7 @@
      inbox; click it once and every future lead is delivered automatically.
      On any network error it falls back to opening a prefilled email so the
      form is never a dead end. */
-  var FORM_EMAIL = 'safetyplumber@gmail.com';
+  var FORM_EMAIL = 'info@verrazanoplumbing.com';
 
   var form=document.getElementById('lead'),btn=document.getElementById('cSubmit'),status=document.getElementById('cStatus'),success=document.getElementById('cSuccess');
   function val(id){var el=document.getElementById(id);return el?el.value.trim():'';}
