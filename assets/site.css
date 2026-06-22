@@ -526,4 +526,28 @@ img{max-width:100%;display:block}
 .hero__cta{margin-top:20px}
 .hero__cta .btn{font-size:1.02rem;padding:14px 26px}
 
+/* --- animated / cinematic hero (added) --- */
+@media (prefers-reduced-motion: no-preference){
+  /* slow Ken Burns zoom on the skyline */
+  .hero__media img{animation:heroZoom 30s ease-in-out infinite alternate;transform-origin:62% 42%;will-change:transform}
+  @keyframes heroZoom{from{transform:scale(1.05)}to{transform:scale(1.17) translate(-1.5%,-1.5%)}}
+
+  /* drifting warm orange glow over the scrim */
+  .hero__scrim::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(42% 55% at 80% 24%,rgba(232,83,31,.34),transparent 68%);mix-blend-mode:screen;animation:heroGlow 18s ease-in-out infinite alternate;will-change:transform,opacity}
+  @keyframes heroGlow{0%{transform:translate(0,0);opacity:.5}50%{opacity:.9}100%{transform:translate(-7%,9%);opacity:.62}}
+
+  /* staggered fade-up entrance for each line */
+  .hero__eyebrow,.hero h1,.hero__lead,.hero__sub,.hero__cta{opacity:0;animation:heroUp .95s cubic-bezier(.22,1,.36,1) forwards}
+  .hero__eyebrow{animation-delay:.15s}
+  .hero h1{animation-delay:.32s}
+  .hero__lead{animation-delay:.5s}
+  .hero__sub{animation-delay:.66s}
+  .hero__cta{animation-delay:.82s}
+  @keyframes heroUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+
+  /* continuous shimmer across the highlighted words */
+  .hero h1 .u{background:linear-gradient(100deg,#5db4e6 0%,#cfe8f7 28%,#5db4e6 52%,#5db4e6 100%);background-size:230% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;animation:heroShimmer 6.5s linear infinite}
+  @keyframes heroShimmer{from{background-position:210% 0}to{background-position:-30% 0}}
+}
+
 .tb-lead{font-weight:700;font-size:1.06em;margin-bottom:.45rem}
