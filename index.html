@@ -15,7 +15,9 @@
 <meta property="og:image" content="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/img/nyc-skyline.jpg" fetchpriority="high">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap"></noscript>
 <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
@@ -73,7 +75,7 @@
 
 <!-- HERO -->
 <header class="hero" id="top">
-  <div class="hero__media" aria-hidden="true"><img src="assets/img/nyc-skyline.jpg" alt=""></div>
+  <div class="hero__media" aria-hidden="true"><img src="assets/img/nyc-skyline.jpg" alt="" width="1920" height="1080" fetchpriority="high" decoding="async"></div>
   <div class="hero__scrim" aria-hidden="true"></div>
   <div class="in hero__inner">
     <span class="hero__eyebrow">Second-Generation, Family-Owned · Serving NYC for 20+ Years</span>
