@@ -304,6 +304,18 @@ img{max-width:100%;display:block}
 .titlebar .in{position:relative;z-index:2}
 .titlebar h1{font-family:var(--sans);font-weight:800;font-size:clamp(2.1rem,4.6vw,3.3rem);letter-spacing:-.03em;line-height:1.06}
 .titlebar p{margin-top:14px;color:rgba(223,233,242,.82);font-size:1.1rem;max-width:640px}
+
+/* --- photo title bars (added) --- */
+.titlebar.has-photo{background:var(--navy)}
+.titlebar.has-photo::before,.titlebar.has-photo::after{display:none!important}
+.tb-media{position:absolute;inset:0;z-index:0;overflow:hidden}
+.tb-media img{width:100%;height:100%;object-fit:cover;object-position:center 40%;display:block}
+.tb-scrim{position:absolute;inset:0;z-index:1;background:linear-gradient(95deg,rgba(8,22,40,.94),rgba(8,22,40,.72) 52%,rgba(8,22,40,.46) 100%),linear-gradient(0deg,rgba(8,22,40,.55),transparent 55%)}
+.titlebar.has-photo .in{position:relative;z-index:2}
+@media (prefers-reduced-motion: no-preference){
+  .tb-media img{animation:tbZoom 24s ease-in-out infinite alternate;transform-origin:60% 40%;will-change:transform}
+  @keyframes tbZoom{from{transform:scale(1.06)}to{transform:scale(1.16) translate(-1%,-1%)}}
+}
 .crumb{display:flex;align-items:center;gap:8px;font-size:.86rem;font-weight:700;color:#9fc2dd;margin-bottom:16px}
 .crumb a{color:#9fc2dd;transition:color .2s}.crumb a:hover{color:#fff}
 .crumb span{opacity:.5}
